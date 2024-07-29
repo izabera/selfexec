@@ -1,0 +1,3 @@
+sudo sysctl vm.mmap_min_addr=0
+make
+strace ./x
