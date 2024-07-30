@@ -1,3 +1,14 @@
+a binary that executes 2 instructions in userspace before execing itself and starting over
+
 sudo sysctl vm.mmap_min_addr=0
 make
 strace ./x
+
+
+execve(NULL, NULL, NULL)                = 0
+execve(NULL, NULL, NULL)                = 0
+execve(NULL, NULL, NULL)                = 0
+execve(NULL, NULL, NULL)                = 0
+execve(NULL, NULL, NULL)                = 0
+(all succeeding)
+bet you've bever seen such a strace before!

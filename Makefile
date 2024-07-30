@@ -1,2 +1,2 @@
-x: x.o
+x: x.o script.ld
 	ld -T script.ld $< -o $@

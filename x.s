@@ -5,5 +5,5 @@
 .global selfexec
 selfexec:
 // execve
-mov $59, %eax
+add $59, %al
 syscall

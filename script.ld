@@ -5,9 +5,7 @@ ENTRY(selfexec)
 SECTIONS {
     . = 0x00000000;
     .zeropage : {
-        * (.zeropage);
-        . = 0x00001000;
+        *(.zeropage);
+        *(.text);
     }
-
-    .text : { *(.text); }
 }
